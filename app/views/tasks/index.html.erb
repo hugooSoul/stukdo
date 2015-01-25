@@ -1,4 +1,4 @@
-<h1>To Do</h1>
+<!--<h1>To Do</h1>
 
 <table>
   <thead>
@@ -76,7 +76,26 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table>-->
+
+<div class="row-fluid">
+    
+    <div class="col-md-4"><h1 class="text-center">To Do</h1>
+    <%= render @to_do %>
+        
+    </div>
+    
+    <div class="col-md-4"><h1 class="text-center">Doing</h1>
+    <%= render @doing %>
+    
+    </div>
+    
+    <div class="col-md-4"><h1 class="text-center">Done</h1>
+    <%= render @done %>
+        
+    </div>
+    
+</div>
 
 <br>
 
